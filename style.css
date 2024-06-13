@@ -1,0 +1,113 @@
+.navbar-expand-lg{
+    display: flex;
+    justify-content: space-between;
+    background-color:#04AA6D!important;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    align-items: center;
+    padding: 0px;
+}
+#navbar-logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-expand-lg .container{
+    margin-left: 60px;
+}
+#navbarSupportedContent{
+    margin-left: 355px;
+}
+.navbar-brand img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.navbar-brand span{
+    color: rgb(249, 249, 218);
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.nav-item a{
+    color: rgb(249, 249, 218);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.nav-item a img{
+    width: 45px;
+    height: 45px;
+}
+.nav-item a:hover{
+    color: #231611;
+    font-weight: 800;
+}
+.gender{
+    display: inline-block;
+}
+body{
+    background-image: url(back.webp) ;
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+footer {
+    color:rgb(249, 249, 218);
+    margin-top: 190px;
+}
+footer img{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    margin-left: 80px;
+    
+}
+footer span{
+    font-size: large;
+    font-weight: 500;
+}
+
+.cardd{
+    background-color: #04AA6D;
+    width: 388px;
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cardd img{
+    width: 100px;
+    height: 100px;
+}
+#sub{
+    background-color: #04AA6D;
+    color: rgb(249, 249, 218);
+    border: #04AA6D;
+    transition: 1s;
+    font-size: large;
+}
+#sub:hover{
+    transform: scale(1.2);
+}
+.Welcome{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    text-align: center;
+    margin: 20px;
+}
+form{
+    font-size: medium;
+    margin:20px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container" id="navbar-logo">
+          <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="Rafah">
+            <span>Rafah Hospital</span>
+            
+          </a>
+          <button id="Hamburger" class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="container-fluid">
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sections</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Doctors</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">contact</a>
+              </li>
+            </ul> 
+          </div>
+        </div>
+      </nav>
+      <p class="Welcome">Welcome to Rafah Hospital, We wish you health and wellness.</p>
+      <form id="form">
+        <label for="fname">Full Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="password">Password:</label><br>
+        <input type="text" id="password" name="password"><br>
+        <label for="birth">Date Of Birth:</label><br>
+        <input type="date" id="birth" name="birth"><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="text" id="phone" name="phone"><br>
+        <p class="gender">Gender:</p>
+        <input class="gender" type="radio" id="male" name="gender" value="male">
+        <label class="gender" for="male">Male</label>
+        <input class="gender" type="radio" id="female" name="gender" value="female">
+        <label class="gender" for="female">Female</label><br>
+        <p class="disease"> Chronic Diseases :</p>
+        <select name="Chronic Diseases" id="diseases">
+            <option value="No">No</option>
+            <option value="Heart Disease">Heart Disease</option>
+            <option value="Hypertension">Hypertension</option>
+            <option value="Asthma">Asthma</option>
+            <option value="Cancer">Cancer</option>
+        
+        </select><br><br>
+
+        <input type="submit" value="Submit" id="sub">
+      </form> 
+      <div id="carddd"></div>
+      <footer class="bg-body-tertiary text-center text-lg-start">
+        <div  style="background-color: #04AA6D;">
+          <img src="logo.png" alt="">
+          © 2020 Copyright:<span>Rafah Hospital</span>
+          
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="app.js"></script>
+</body>
+</html>
