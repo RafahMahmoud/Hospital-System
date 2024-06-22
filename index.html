@@ -40,13 +40,35 @@
       <p class="Welcome">Welcome to Rafah Hospital, We wish you health and wellness.</p>
       <form id="form">
         <label for="fname" >Full Name:</label><br>
-        <input type="text" id="fname" name="fname" style="width: 350px;"><br>
+        <input type="text" id="fname" name="fname" style="width: 350px;" oninput="validateName()"><br>
+        <ul>
+          <li id="nospaces" class="invalid">Shouldn't have spaces</li>
+        </ul>
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" name="email" oninput="validateEmail()"><br>
+        <ul>
+          <li id="emailvalid" class="invalid">Valid e-mail</li>
+        </ul>
         <label for="password">Password:</label><br>
-        <input type="text" id="password" name="password" style="width: 350px;"><br>
+        <input type="password" id="password"  oninput="validatePassword()">
+    <ul>
+        <li id="length" class="invalid">At least 8 characters long</li>
+        <li id="lowercase" class="invalid">At least one lowercase letter</li>
+        <li id="uppercase" class="invalid">At least one uppercase letter</li>
+        <li id="digit" class="invalid">At least one digit</li>
+        <li id="special" class="invalid">At least one special character</li>
+    </ul>
+<br>
         <label for="birth">Date Of Birth:</label><br>
-        <input type="date" id="birth" name="birth" style="width: 350px;"><br>
-        <label for="phone">Phone Number:</label><br>
-        <input type="text" id="phone" name="phone" style="width: 350px;"><br>
+        <input type="date"  id="birth" name="birth" style="width: 350px;"><br>
+        
+        <label for="phone">Phone number:</label><br>
+        <input type="tel" id="phone" name="phone" oninput="validateNumber()"><br>
+        <ul>
+          <li id="typePhone" class="invalid">Just 10 Numbers</li>
+        <li id="startPhone" class="invalid">Start with 07</li>
+        
+        </ul>
         <p class="gender">Gender:</p>
         <input class="gender" type="radio" id="male" name="gender" value="male">
         <label class="gender" for="male">Male</label>
